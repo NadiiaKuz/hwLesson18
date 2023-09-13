@@ -19,8 +19,16 @@
             return array;
         }
 
-        public static int GetElementCount(this int[] array) =>
-            array.Length;
+        public static int GetElementCount(this int[] array)
+        {
+            int count = 0;
+            var mover = array.GetEnumerator();
+            
+            while (mover.MoveNext())
+                count++;
+
+            return count;
+        }
 
         public static int GetElementByIndex(this int[] array, int index) =>
             array[index];
