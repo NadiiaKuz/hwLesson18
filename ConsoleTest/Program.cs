@@ -12,14 +12,14 @@ namespace ConsoleTest
             Console.WriteLine(Calculator.Mul(2, 4));
             Console.WriteLine(Calculator.Div(2, 4));
 
-            var numbers = new List<int> { 2, 5, 10, 3, 6, 19, 1 };
+            int[] numbers = { 2, 5, 10, 3, 6, 19, 1 };
 
             Console.WriteLine(String.Join(' ', numbers.SortList().ToArray()));
             Console.WriteLine(numbers.GetElementCount());
             Console.WriteLine(numbers.GetElementByIndex(3));
             Console.WriteLine(numbers.GetSum());
-            Console.WriteLine(numbers.GetMin());
-            Console.WriteLine(numbers.GetMax());
+            Console.WriteLine(numbers.GetMinValue());
+            Console.WriteLine(numbers.GetMaxValue());
         }
     }
 }
